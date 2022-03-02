@@ -6,16 +6,13 @@ last white blood cell count (WBC), last neutrophil count, and delta white blood 
 the validation cohort assesses weight-adjusted dose by genotype
 
 Primary Exposure: 
-
 * ackr = rs2814778-CC genotype
 
 Primary Outcome: 
-
 *	dose_depend = discontinuation of azathioprine attributed to leukopenia, neutropenia, 
 *	pancytopenia, anemia, and/or thrombocytopenia
 
 Secondary Outcomes: 
-
 *	last_wbc = final WBC (closest to last dose in -30 to +3 days); 
 *	last_neutro = final neutrophil count (closest to last dose in -30 to +3 days); 
 *	delta_wbc = change in WBC from initial dose to last dose; 
@@ -25,7 +22,6 @@ Secondary Outcomes:
 ## Table of Contents (follows order of appearance in manuscript)
 
 Primary Cohort
-
 1. Information reported or referenced in manuscript, not in Table or Figure
 2. Table 1
 3. Supplement Table 2
@@ -42,6 +38,5 @@ Primary Cohort
 Responses to Reviewers
 
 Validation Cohort
-
 13. Figure 4
 14. Supplement Figure 2

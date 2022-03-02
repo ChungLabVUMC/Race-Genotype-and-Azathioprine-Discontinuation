@@ -7,7 +7,7 @@ the validation cohort assesses weight-adjusted dose by genotype
 
 Primary Exposure: 
 
-&nbsp; ackr = rs2814778-CC genotype
+&nbsp;&nbsp;&nbsp; ackr = rs2814778-CC genotype
 
 Primary Outcome: 
 

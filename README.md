@@ -22,7 +22,7 @@ Secondary Outcomes:
 *	last_ratio = final weight-adjusted dose during follow=up; 
 *	avgdi = 6-month average dose intensity relative to target dose [validation cohort]
 
-### Table of Contents (follows order of appearance in manuscript)
+## Table of Contents (follows order of appearance in manuscript)
 
 Primary Cohort
 

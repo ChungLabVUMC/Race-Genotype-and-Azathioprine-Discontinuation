@@ -4,8 +4,9 @@ This study examines whether genotype predicts discontinuation of azathioprine at
 to hematopoetic toxicity; secondary outcomes include weight-adjusted last dose, 
 last white blood cell count (WBC), last neutrophil count, and delta white blood cell count; 
 the validation cohort assesses weight-adjusted dose by genotype
+
 Primary Exposure: 
-	ackr = rs2814778-CC genotype
+&nbsp; ackr = rs2814778-CC genotype
 Primary Outcome: 
 	dose_depend = discontinuation of azathioprine attributed to leukopenia, neutropenia, 
 	pancytopenia, anemia, and/or thrombocytopenia

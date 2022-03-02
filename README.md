@@ -9,8 +9,7 @@ Primary Exposure:
 * ackr = rs2814778-CC genotype
 
 Primary Outcome: 
-*	dose_depend = discontinuation of azathioprine attributed to leukopenia, neutropenia, 
-*	pancytopenia, anemia, and/or thrombocytopenia
+*	dose_depend = discontinuation of azathioprine attributed to leukopenia, neutropenia, pancytopenia, anemia, and/or thrombocytopenia
 
 Secondary Outcomes: 
 *	last_wbc = final WBC (closest to last dose in -30 to +3 days); 

@@ -56,6 +56,7 @@ sum time, d
 sum age, d
 tab race
 tab sex
+tab ancestry race, col row
 
 *assess follow-up (in days) by genotpe
 bysort ackr: sum time, d

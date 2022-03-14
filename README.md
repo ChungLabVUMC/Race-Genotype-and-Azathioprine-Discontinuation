@@ -23,16 +23,16 @@ Secondary Outcomes:
 Primary Cohort
 1. Information reported or referenced in manuscript, not in Table or Figure
 2. Table 1
-3. Supplement Table 2
+3. Supplement Table 3
 4. Primary Analysis
-5. Supplement Table 3
-6. Supplement Table 4
+5. Supplement Table 4
+6. Supplement Table 5
 7. Figure 2
-8. Supplement Table 5
+8. Supplement Table 6
 9. Supplement Figure 1
 10. Figure 3
 11. Table 2
-12. Supplement Table 6
+12. Supplement Table 7
 
 Responses to Reviewers
 

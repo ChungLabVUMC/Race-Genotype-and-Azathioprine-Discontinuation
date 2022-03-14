@@ -24,16 +24,16 @@ Secondary Outcomes:
 Primary Cohort
 	I. Information reported or referenced in manuscript, not in Table or Figure
 	II. Table 1
-	III. Supplement Table 2
+	III. Supplement Table 3
 	IV. Primary Analysis
-	V. Supplement Table 3
-	VI. Supplement Table 4
+	V. Supplement Table 4
+	VI. Supplement Table 5
 	VII. Figure 2
-	VIII. Supplement Table 5
+	VIII. Supplement Table 6
 	IX. Supplement Figure 1
 	X. Figure 3
 	XI. Table 2
-	XII. Supplement Table 6
+	XII. Supplement Table 7
 Responses to Reviewers
 Validation Cohort
 	XIII. Figure 4
@@ -265,14 +265,14 @@ ranksum baseline_wbc, by(ackr)
 
 
 
-************III. Supplement Table 2: Genotype by EHR-reported race and genetic ancestry****
+************III. Supplement Table 3: Genotype by EHR-reported race and genetic ancestry****
 tab ancestry race
 tab ancestry ackr if race==0
 tab ancestry ackr if race==1
 
 
 
-***************IV. Primary Analysis (also reported in Supplement Table 3)****************
+***************IV. Primary Analysis (also reported in Supplement Table 4)****************
 ***Establish COMPETING RISK 
 *prepare competing risk variable (discontinued for reasons other than hematopoietic toxicities, 
 *including other side effects (e.g., fever) and non-side effects (e.g., costs))
@@ -355,7 +355,7 @@ predict ps_adj
 poisson dose_depend ackr race ps_adj, exposure(year) irr
 drop ps_adj
 
-**********V. Supplement Table 3: Sensitivity Analyses (primary results also reported in this table)************
+**********V. Supplement Table 4: Sensitivity Analyses (primary results also reported in this table)************
 *Sensitivity/Additional Analyses 
 * 1) analysis for those with available baseline WBC (unadjusted, Model 1, Model 2, Model 3)
 stset year, failure (dose_depend)
@@ -460,7 +460,7 @@ stcrreg ackr ps_adj, compete (dose_depend==1)
 drop ps_adj
 
 
-**************VI. Supplement Table 4 - Propensity score characteristics weighted and unweighted 
+**************VI. Supplement Table 5 - Propensity score characteristics weighted and unweighted 
 *(uses programs "propwt" and "pbalchk" from the "propensity" suite at  
 *http://personalpages.manchester.ac.uk/staff/mark.lunt/; using command 
 *"net from http://personalpages.manchester.ac.uk/staff/mark.lunt")*********************
@@ -493,7 +493,7 @@ graph save "graph" "Z:\Azathioprine\Dickson\persistence\ackr1\genotypeonly.gph",
 
 
 
-**************VIII. Supplement Table 5: Race and ACKR1 in competing risk survival analysis - 
+**************VIII. Supplement Table 6: Race and ACKR1 in competing risk survival analysis - 
 *why ACKR is the important category*******************
 * 1) Race as exposure, rather than ackr (unadjusted, Model 1, Model 2, and Model 3)
 stset year, failure (dose_depend)
@@ -676,7 +676,7 @@ ranksum last_ratio if overall==0, by (ackr)
 
 
 
-***************XII. Supplement Table 6: WBC, NC, and Delta WBC restsricted 
+***************XII. Supplement Table 7: WBC, NC, and Delta WBC restsricted 
 *(limited -30 to day of last dose instead of 3 days later)******************
 *Patients with Outcome (discontinued for hematopoietic toxicity)
 bysort ackr1: sum last_wbc_alt last_neutro_alt delta_wbc_alt if dose_depend==1, d

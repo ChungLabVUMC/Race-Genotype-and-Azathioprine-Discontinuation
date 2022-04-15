@@ -32,7 +32,7 @@ Primary Cohort
 9. Supplement Figure 1
 10. Figure 3
 11. Table 2
-12. Supplement Table 7
+
 
 Responses to Reviewers
 

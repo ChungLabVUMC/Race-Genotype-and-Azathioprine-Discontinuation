@@ -33,7 +33,6 @@ Primary Cohort
 	IX. Supplement Figure 1
 	X. Figure 3
 	XI. Table 2
-	XII. Supplement Table 7
 Responses to Reviewers
 Validation Cohort
 	XIII. Figure 4
@@ -644,29 +643,6 @@ graph save "graph" "Z:\Azathioprine\Dickson\persistence\ackr1\race_genotype.gph"
 *and Weight-adjusted Last Dose*******************
 *create change in WBC variable
 gen delta_wbc=last_wbc-baseline_wbc if last_wbc!=. & baseline_wbc!=.
-
-* 1) Discontinued for hematopoietic toxicity
-bysort ackr1: sum last_wbc last_neutro delta_wbc last_ratio if dose_depend==1, d
-ranksum last_wbc if dose_depend==1, by (ackr1)
-ranksum last_neutro if dose_depend==1, by (ackr1)
-ranksum delta_wbc if dose_depend==1, by (ackr)
-ranksum last_ratio if dose_depend==1, by (ackr)
-*Last weight-adjusted dose for TPMT/NUDT15 metabolizer normal only 
-bysort ackr1: sum last_ratio if dose_depend==1 & overall==0, d
-ranksum last_ratio if dose_depend==1 & overall==0, by (ackr)
-
-* 2) Did not discontinue for hematopoietic toxicity
-bysort ackr1: sum last_wbc last_neutro delta_wbc last_ratio if dose_depend==0, d
-ranksum last_wbc if dose_depend==0, by (ackr1)
-ranksum last_neutro if dose_depend==0, by (ackr1)
-ranksum delta_wbc if dose_depend==0, by (ackr)
-ranksum last_ratio if dose_depend==0, by (ackr)
-*Last weight-adjusted dose for TPMT/NUDT15 metabolizer normal only 
-bysort ackr1: sum last_ratio if dose_depend==0 & overall==0, d
-ranksum last_ratio if dose_depend==0 & overall==0, by (ackr)
-
-
-*QC - all patients
 bysort ackr1: sum last_wbc last_neutro delta_wbc last_ratio, d
 ranksum last_wbc, by (ackr1)
 ranksum last_neutro, by (ackr1)
@@ -676,29 +652,6 @@ bysort ackr1: sum last_ratio if overall==0, d
 ranksum last_ratio if overall==0, by (ackr)
 
 
-
-***************XII. Supplement Table 7: WBC, NC, and Delta WBC restsricted 
-*(limited -30 to day of last dose instead of 3 days later)******************
-*Patients with Outcome (discontinued for hematopoietic toxicity)
-bysort ackr1: sum last_wbc_alt last_neutro_alt delta_wbc_alt if dose_depend==1, d
-ranksum last_wbc_alt if dose_depend==1, by (ackr1)
-ranksum last_neutro_alt if dose_depend==1, by (ackr1)
-ranksum delta_wbc_alt if dose_depend==1, by (ackr)
-
-
-*Patients without Outcome (did not discontinue for hematopoietic toxicity)
-bysort ackr1: sum last_wbc_alt last_neutro_alt delta_wbc_alt if dose_depend==0, d
-ranksum last_wbc_alt if dose_depend==0, by (ackr1)
-ranksum last_neutro_alt if dose_depend==0, by (ackr1)
-ranksum delta_wbc_alt if dose_depend==0, by (ackr)
-
-
-*QC - all patients
-bysort ackr1: sum last_wbc_alt last_neutro_alt delta_wbc_alt last_ratio, d
-ranksum last_wbc_alt, by (ackr1)
-ranksum last_neutro_alt, by (ackr1)
-ranksum delta_wbc_alt, by (ackr1)
-ranksum last_ratio, by (ackr)
 
 
 ********************************************************************************
